@@ -1,4 +1,13 @@
 language: ruby
 rvm:
   - "1.9.3"
-script: bundle exec rspec spec
+  - "1.9.2"
+env:
+  - DB=mysql
+script:
+  - RAILS_ENV=test bundle exec rake db:migrate --trace
+  - bundle exec rake db:test:prepare
+  - bundle exec rspec spec
+before_script:
+  - mysql -e 'create database archive_test'
+bundler_args: --binstubs= ./bundler_stubs
