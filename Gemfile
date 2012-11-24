@@ -7,6 +7,7 @@ gem 'haml-rails'
 gem 'devise'
 gem 'sass'
 gem 'activeadmin'
+gem 'meta_search', '>= 1.1.0.pre'
 gem 'nokogiri'
 
 group :assets do

@@ -240,6 +240,7 @@ DEPENDENCIES
   haml-rails
   jquery-rails
   letter_opener
+  meta_search (>= 1.1.0.pre)
   mina
   mysql2
   nokogiri
