@@ -3,6 +3,11 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.9'
 gem 'mysql2'
 gem 'jquery-rails'
+gem 'haml-rails'
+gem 'devise'
+gem 'sass'
+gem 'activeadmin'
+gem 'nokogiri'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -11,3 +16,13 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :test, :development do
+  gem 'rspec-rails', '~> 2.0'
+  gem 'capybara'
+  gem 'shoulda-matchers'
+  gem 'guard-rspec'
+  gem 'simplecov', '>= 0.4.0', :require => false
+  gem 'letter_opener'
+  gem 'mina'
+  gem 'bullet'
+end
