@@ -8,4 +8,5 @@ class Document < ActiveRecord::Base
     :message => "Only PDF files are supported."
 
   has_many :images
+  has_many :pages
 end
