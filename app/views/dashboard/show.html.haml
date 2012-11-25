@@ -1,1 +1,5 @@
 DASHBOARD
+
+= form_for @document, :url => documents_path do |f|
+  = f.file_field :file
+  = f.submit

@@ -8,4 +8,12 @@ class Document < ActiveRecord::Base
     :message => "Only PDF files are supported."
 
   has_many :pages
+
+  after_create :process_document
+
+  private
+
+  def process_document
+    DocumentWorker.perform_async(self)
+  end
 end
