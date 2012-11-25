@@ -1,5 +1,5 @@
 class Document < ActiveRecord::Base
-  attr_accessible :content, :file_name, :title, :file
+  attr_accessible :file_name, :title, :file
 
   has_attached_file :file
 
