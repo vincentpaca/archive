@@ -25,6 +25,20 @@ Then to run redis, do:
 
 That's it! Redis is now running at port 6379.
 
+### Sidekiq
+Sidekiq comes with a very nifty web interface to track your processes a-la-resque.
+Just add slim and sinatra to your Gemfile:
+
+> gem 'slim'
+> gem 'sinatra', :require => nil
+
+And mount Sidekiq ui to your routes:
+
+> require 'sidekiq/web'
+> mount Sidekiq::Web => '/sidekiq'
+
+For more information, visit [Sidekiq's Monitoring Documentation](https://github.com/mperham/sidekiq/wiki/Monitoring) for securing the UI in production.
+
 ### Docsplit
 archive uses [Docsplit](http://documentcloud.github.com/docsplit/) to break down and process PDF files.
 There are a few dependencies that are needed before starting development.

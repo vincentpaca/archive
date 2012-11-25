@@ -13,6 +13,8 @@ gem 'sidekiq'
 gem 'paperclip', '~> 3.0'
 gem 'docsplit'
 gem 'pdf-reader'
+gem 'slim'
+gem 'sinatra', :require => nil
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

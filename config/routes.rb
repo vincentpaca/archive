@@ -9,5 +9,8 @@ Archive::Application.routes.draw do
     resources :documents
   end
 
+  require 'sidekiq/web'
+  mount Sidekiq::Web => '/sidekiq'
+
   root :to => "home#index"
 end
