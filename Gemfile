@@ -9,6 +9,8 @@ gem 'sass'
 gem 'activeadmin'
 gem 'meta_search', '>= 1.1.0.pre'
 gem 'nokogiri'
+gem 'sidekiq'
+gem 'paperclip', '~> 3.0'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
