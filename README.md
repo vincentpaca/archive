@@ -11,31 +11,31 @@ Development Notes
 archive uses [Sidekiq](http://mperham.github.com/sidekiq) for background processes and in effect 
 needs to have [redis](http://redis.io/download) on your machine installed.
 
-### Installing Redis
+#### Installing Redis
 Installing redis is easy. For development, do:
 
-> wget http://redis.googlecode.com/files/redis-2.6.5.tar.gz
-> tar xzf redis-2.6.5.tar.gz
-> cd redis-2.6.5.tar.gz
-> make
+    wget http://redis.googlecode.com/files/redis-2.6.5.tar.gz
+    tar xzf redis-2.6.5.tar.gz
+    cd redis-2.6.5.tar.gz
+    make
 
 Then to run redis, do:
 
-> src/redis-server
+    src/redis-server
 
 That's it! Redis is now running at port 6379.
 
-### Sidekiq
+#### Sidekiq
 Sidekiq comes with a very nifty web interface to track your processes a-la-resque.
 Just add slim and sinatra to your Gemfile:
 
-> gem 'slim'
-> gem 'sinatra', :require => nil
+    gem 'slim'
+    gem 'sinatra', :require => nil
 
 And mount Sidekiq ui to your routes:
 
-> require 'sidekiq/web'
-> mount Sidekiq::Web => '/sidekiq'
+    require 'sidekiq/web'
+    mount Sidekiq::Web => '/sidekiq'
 
 For more information, visit [Sidekiq's Monitoring Documentation](https://github.com/mperham/sidekiq/wiki/Monitoring) for securing the UI in production.
 
@@ -43,7 +43,7 @@ For more information, visit [Sidekiq's Monitoring Documentation](https://github.
 archive uses [Docsplit](http://documentcloud.github.com/docsplit/) to break down and process PDF files.
 There are a few dependencies that are needed before starting development.
 
-### Docsplit Prerequisites
+#### Docsplit Prerequisites
 All packages are available via apt or brew.
 
 1. install graphicsmagick
