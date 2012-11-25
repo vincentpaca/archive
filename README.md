@@ -7,6 +7,25 @@ Upload, search and browse through your files easily with this application.
 Development Notes
 -----------------
 
+### Background jobs with Sidekiq and Redis
+archive uses [Sidekiq](http://mperham.github.com/sidekiq) for background processes and in effect 
+needs to have [redis](http://redis.io/download) on your machine installed.
+
+### Installing Redis
+Installing redis is easy. For development, do:
+
+> wget http://redis.googlecode.com/files/redis-2.6.5.tar.gz
+> tar xzf redis-2.6.5.tar.gz
+> cd redis-2.6.5.tar.gz
+> make
+
+Then to run redis, do:
+
+> src/redis-server
+
+That's it! Redis is now running at port 6379.
+
+### Docsplit
 archive uses [Docsplit](http://documentcloud.github.com/docsplit/) to break down and process PDF files.
 There are a few dependencies that are needed before starting development.
 
