@@ -9,6 +9,6 @@ class Document < ActiveRecord::Base
   private
 
   def process_document
-    DocumentWorker.perform_async(self, self.file)
+    DocumentWorker.perform_async(self)
   end
 end
