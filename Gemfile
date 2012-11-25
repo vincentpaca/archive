@@ -11,6 +11,7 @@ gem 'meta_search', '>= 1.1.0.pre'
 gem 'nokogiri'
 gem 'sidekiq'
 gem 'paperclip', '~> 3.0'
+gem 'docsplit'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -28,4 +29,5 @@ group :test, :development do
   gem 'letter_opener'
   gem 'mina'
   gem 'bullet'
+  gem 'factory_girl_rails', '~> 4.0'
 end
