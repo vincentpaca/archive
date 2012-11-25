@@ -12,6 +12,7 @@ gem 'nokogiri'
 gem 'sidekiq'
 gem 'paperclip', '~> 3.0'
 gem 'docsplit'
+gem 'pdf-reader'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
