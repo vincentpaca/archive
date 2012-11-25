@@ -7,4 +7,5 @@ class Document < ActiveRecord::Base
     :content_type => [ 'application/pdf' ],
     :message => "Only PDF files are supported."
 
+  has_many :images
 end
