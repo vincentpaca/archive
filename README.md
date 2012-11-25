@@ -15,7 +15,7 @@ All packages are available via apt or brew.
 
 1. install graphicsmagick
 
-2. install poppler
+2. install poppler (poppler-utils poppler-data for *nix)
 
 3. install ghostscript
 
