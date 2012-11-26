@@ -1,6 +1,6 @@
 archive
 =======
-[![Build Status](https://secure.travis-ci.org/vincentpaca/archive.png?branch=master)](https://travis-ci.org/vincentpaca/archive) [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/vincentpaca/archive)
+[![Dependency Status](https://gemnasium.com/vincentpaca/archive.png)](https://gemnasium.com/vincentpaca/archive) [![Build Status](https://secure.travis-ci.org/vincentpaca/archive.png?branch=master)](https://travis-ci.org/vincentpaca/archive) [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/vincentpaca/archive)
 
 Upload, search and browse through your files easily with this application.
 
@@ -8,7 +8,7 @@ Development Notes
 -----------------
 
 ### Background jobs with Sidekiq and Redis
-archive uses [Sidekiq](http://mperham.github.com/sidekiq) for background processes and in effect 
+archive uses [Sidekiq](http://mperham.github.com/sidekiq) for background processes and in effect
 needs to have [redis](http://redis.io/download) on your machine installed.
 
 #### Installing Redis
